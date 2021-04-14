@@ -13,7 +13,7 @@ def inicio():
 
 @app.route('/alumno/<int:id>')
 def alumno(id):
-	for alumno in nota:
+	for alumno in notas:
 		if alumno["id"]==id:
 			return render_template("alumno.html",alum=alumno)
 	abort(404)
